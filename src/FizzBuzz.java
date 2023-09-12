@@ -8,12 +8,12 @@ class FizzBuzz {
         //for (int i = 1; i < 100; i++) {
         int i = 1;
         while (i < 100){
-            i = doFizzBuzz(i);
+            doFizzBuzz(i);
             i++;
         }
     }
 
-    public static int doFizzBuzz(int i) {
+    public static void doFizzBuzz(int i) {
 
         // Find out which numbers divide i.
         boolean divisibleBy3 = i % 3 == 0;
@@ -37,6 +37,5 @@ class FizzBuzz {
             System.out.println(i);
 
         }
-        return i;
     }
 }
